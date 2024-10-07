@@ -14,8 +14,8 @@
     <title>Project: Admin Dashboard</title>
   </head>
   <body>
-    <header>
-      <section class="header-top">
+    <header class="header-top">
+      <section>
         <div class="header-top-search">
           <span class="mdi mdi-magnify"></span>
           <input type="text" />
@@ -23,19 +23,80 @@
         <div class="header-top-user">
           <span class="mdi mdi-bell"></span>
           <img
+            class="icon header-icon"
             src="https://images.unsplash.com/photo-1715517642812-a1db746569ae?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
-          <p>El Gato</p>
+          <p>Morgan Oakley</p>
+        </div>
+        <div class="header-top-nav">
+          <div class="user-details">
+            <img
+              class="icon nav-icon"
+              src="https://images.unsplash.com/photo-1715517642812-a1db746569ae?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="user-description">
+              <p>Hi there,</p>
+              <p>Morgan Oakley(@morgan)</p>
+            </div>
+          </div>
+          <div class="user-menu-btn">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
       </section>
     </header>
+    <aside class="aside-nav">
+      <div class="nav-cat nav-top">
+        <span class="mdi mdi-view-dashboard"></span>
+        <p>Dashboard</p>
+      </div>
+      <div class="nav-cat nav-mid">
+        <div class="icon-cat">
+          <span class="mdi mdi-home"></span>
+          <p>Home</p>
+        </div>
+        <div class="icon-cat">
+          <span class="mdi mdi-human-male-board"></span>
+          <p>Profile</p>
+        </div>
+        <div class="icon-cat">
+          <span class="mdi mdi-message-reply"></span>
+          <p>Messages</p>
+        </div>
+        <div class="icon-cat">
+          <span class="mdi mdi-clock-time-eight-outline"></span>
+          <p>History</p>
+        </div>
+        <div class="icon-cat">
+          <span class="mdi mdi-file-document-multiple-outline"></span>
+          <p>Tasks</p>
+        </div>
+        <div class="icon-cat">
+          <span class="mdi mdi-account-group"></span>
+          <p>Communities</p>
+        </div>
+      </div>
+      <div class="nav-cat nav-bottom">
+        <div class="icon-cat">
+          <span class="mdi mdi-cog"></span>
+          <p>Settings</p>
+        </div>
+        <div class="icon-cat">
+          <span class="mdi mdi-help-box"></span>
+          <p>Support</p>
+        </div>
+        <div class="icon-cat">
+          <span class="mdi mdi-shield-check"></span>
+          <p>Privacy</p>
+        </div>
+      </div>
+    </aside>
     <main>
-      <aside>Side nav</aside>
-      <article>
-        <section>Your Projects</section>
-        <section>Annoucement</section>
-        <section>Trending</section>
-      </article>
+      <section>Your Projects</section>
+      <section>Annoucement</section>
+      <section>Trending</section>
     </main>
   </body>
 </html>
