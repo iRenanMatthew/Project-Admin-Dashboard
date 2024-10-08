@@ -119,6 +119,8 @@ body {
   padding: 1em;
   grid-template-columns: 2fr 20vw;
   gap: 1em;
+  filter: drop-shadow(0px -5px 10px #1c1c1c);
+  background-color: #fcfcfc;
 }
 
 .header-top-search {
@@ -194,6 +196,7 @@ body {
   flex-direction: column;
   color: #fcfcfc;
   font-weight: bold;
+  z-index: 2;
 }
 
 .nav-cat,
@@ -216,4 +219,29 @@ body {
   font-size: 1.5em;
   gap: 0.5em;
   padding: 1em 1em 0 0.8em;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  background-color: #e2e8f0;
+}
+
+.project,
+.announcement,
+.trending {
+  padding: 1em;
+}
+
+.project {
+  grid-row: 1 / span 2;
+}
+
+.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(100% / 2));
+}
+
+.project-card {
+  background-color: #fcfcfc;
 }
