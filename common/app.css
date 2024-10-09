@@ -237,11 +237,46 @@ body {
   grid-row: 1 / span 2;
 }
 
+.project h4,
+.announcement h4,
+.trending h4 {
+  margin-bottom: 1em;
+}
+
 .project-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, calc(100% / 2));
+  grid-template-columns: repeat(auto-fit, calc(100% / 2 - 0.5em));
+  justify-content: space-between;
+  gap: 1em;
 }
 
 .project-card {
-  background-color: #fcfcfc;
+  background: rgb(240, 180, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 180, 41, 1) 2%,
+    rgba(255, 255, 255, 1) 2%
+  );
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 220px;
+  padding: 2em 2em 2em 2.5em;
+  gap: 1em;
+  border-radius: 0.5em;
+}
+
+.project-title p:first-child {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.project-title p:last-child {
+  color: #636363;
+}
+
+.project-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
 }
